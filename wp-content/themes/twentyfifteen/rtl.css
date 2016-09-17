@@ -491,6 +491,7 @@ img.alignleft {
 	.site-branding {
 		padding-right: 0;
 		padding-left: 66px;
+        float: left;
 	}
 
 	.widget blockquote {

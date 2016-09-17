@@ -532,10 +532,16 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
+	/*clear: both;*/
 	display: block;
-	float: left;
 	width: 100%;
+    margin-left: 120px;
+    color: #1a1830;
+}
+
+
+.nav-logo {
+    float: left;
 }
 
 .main-navigation ul {
@@ -548,11 +554,13 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+    margin: 0 10px 0 10px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+    color: #1a1830;
 }
 
 .main-navigation ul ul {
@@ -579,14 +587,17 @@ a:active {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
+    color: #706e79;
 }
 
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a {
+    color: #706e79;
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
+    color: #706e79;
 }
 
 .main-navigation ul li:hover > ul,
@@ -603,6 +614,25 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+}
+
+.git-button {
+    float: right;
+}
+
+.git-button a {
+    background-color: #d6171c;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    border: 3px solid #fff;
+    text-decoration: none;
+
+}
+
+.logo-image {
+    max-width: 90px;
+    float: left;
+    margin: 10px 0 0 20px;
 }
 
 /* Small menu. */
@@ -891,4 +921,23 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## EQBA Customs
+--------------------------------------------------------------*/
+
+.CTA {
+    background-color: #d6171c;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    border: 3px solid #fff;
+
+}
+
+.site-content {
+    background-color: blue;
+}
+body {
+    background-color: blue;
 }
