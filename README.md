@@ -1,2 +1,0 @@
-# hws
-Hermitage Works Studios
