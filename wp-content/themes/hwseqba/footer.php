@@ -14,10 +14,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hws-eqba' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'hws-eqba' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'hws-eqba' ), 'hws-eqba', '<a href="http://www.eqba.uk" rel="designer">EQBA</a>' ); ?>
+		<div class="site-info" style="width: 100%;">
+			<span class="footer-text">&#169; 2016 - Hermitage Works Studios</span>
+            
+            <div class="footer-container">
+                <img class="footer-image" src="/wp-content/uploads/2016/09/hws-small.png">
+            </div>
+            
+            <a href="http://eqba.uk"><img class="footer-logo" src="/wp-content/uploads/2016/09/eqba-logo-black.png"></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

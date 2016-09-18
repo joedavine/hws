@@ -554,7 +554,7 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
-    margin: 0 10px 0 10px;
+    margin: 20px 10px 0 10px;
 }
 
 .main-navigation a {
@@ -582,7 +582,6 @@ a:active {
 }
 
 .main-navigation ul ul li {
-
 }
 
 .main-navigation li:hover > a,
@@ -618,13 +617,13 @@ a:active {
 
 .git-button {
     float: right;
+    margin-top: 18px;
 }
 
 .git-button a {
     background-color: #d6171c;
     color: white;
-    padding: 20px 40px 20px 40px;
-    border: 3px solid #fff;
+    padding: 20px 40px 21px 40px;
     text-decoration: none;
 
 }
@@ -632,7 +631,12 @@ a:active {
 .logo-image {
     max-width: 90px;
     float: left;
-    margin: 10px 0 0 20px;
+    margin: 10px 30px 0 20px;
+}
+
+.site-header {
+    position: fixed;
+    width: 100%;
 }
 
 /* Small menu. */
@@ -649,6 +653,13 @@ a:active {
 		display: block;
 	}
 }
+
+@media screen and (max-width: 37.5em) {
+    .git-button {
+        display: none;
+    }
+}
+
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -927,17 +938,208 @@ object {
 ## EQBA Customs
 --------------------------------------------------------------*/
 
+/* ### Header & Nav Styles ### */
+
+.site-header {
+    z-index: 400;
+}
+
+
+/* ### Home Page Styles ### */
+#home-header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-color: black; 
+    margin-top: 60px; 
+    padding: 0;
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+}
+
+.header-content-bg {
+    background-color: #000;
+    height: 60vh;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content h1 {
+    text-transform: uppercase; 
+    color: white; 
+    font-size: 14pt; 
+    font-weight: 200; 
+    letter-spacing: 5px; 
+}
+
+.header-content h1 span {
+    font-weight: bold; 
+    font-size: 36pt;
+}
+
+.header-content p {
+    padding-bottom: 120px;
+    color: white;
+    max-width: 350px;
+    margin: 0 auto 0 auto;
+    font-weight: 200;
+    font-size: 11pt
+}
+
+#services {
+    background-color: #fff;
+    z-index: 30;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#services h2{
+    color: #0e0e0e;
+    text-align: center;
+    text-transform: uppercase;
+    margin:0;
+    padding: 30px 0 30px 0;
+    letter-spacing: 5px;
+    font-weight:normal;
+}
+
+#services .CTA {
+    padding: 20px 0px 20px 0px !important;
+    margin-top: -40px;
+    z-index:300;
+    opacity:0.999;
+}
+
+#services .CTA:hover {
+    text-decoration: none !important;
+}
+
+
+#rooms {
+    background-color: #e6e6e6;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+#rooms h2{
+    color: #0e0e0e;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:0;
+    padding: 30px 0 30px 0;
+    letter-spacing: 5px;
+    font-weight:normal;
+}
+
+/* ### General Use Styles ### */
+
 .CTA {
     background-color: #d6171c;
     color: white;
     padding: 20px 40px 20px 40px;
     border: 3px solid #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 
+.CTA:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    display: inline-block;
+    background-color: #fff;
+    opacity:0.999;
+}
+
+.first-card {
+    margin: 30px auto 60px auto;
+}
+
+.middle-card {
+    margin: 30px 6% 60px 6%;
+}
+
+.last-card{
+    margin: 30px auto 60px auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+    padding: 2px 16px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card-container h4 {
+    padding-top: 10px;
+    width: 200px;
+    text-align: center;
+    margin: -40px auto 0 auto;
+}
+
+.cards {
+    text-align: center;
+    width: 100%;
 }
 
 .site-content {
-    background-color: blue;
+    background-color: #fff;
 }
 body {
-    background-color: blue;
+    background-color: #fff;
+}
+
+/* ### Footer Styles ### */
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.footer-logo {
+    max-height: 20px;
+    margin: 15px 15px 0 0;
+    float: right;
+}
+
+.footer-text {
+    font-size: 8pt;
+    margin: 18px 0 0 15px;
+    float: left;
+}
+
+.footer-image {
+    max-height: 50px;
+    width: 51px;
+    margin: -20px auto 0 auto;
+}
+.footer-container {
+    text-align: center; 
+    position: absolute; 
+    left: 47%;
 }
