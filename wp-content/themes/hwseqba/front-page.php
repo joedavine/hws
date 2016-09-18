@@ -83,7 +83,7 @@ get_header(); ?>
         </div>
             
         <div id="rooms">
-            <h2>rooms</h2>    
+            <h2>rooms</h2>  
         </div> 
             
             

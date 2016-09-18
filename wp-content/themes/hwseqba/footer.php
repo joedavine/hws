@@ -21,7 +21,8 @@
                 <img class="footer-image" src="/wp-content/uploads/2016/09/hws-small.png">
             </div>
             
-            <a href="http://eqba.uk"><img class="footer-logo" src="/wp-content/uploads/2016/09/eqba-logo-black.png"></a>
+            <a href="http://eqba.uk">
+                <img class="footer-logo" id="imgDino" src="/wp-content/uploads/2016/09/eqba-logo-black-1.png"></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
@@ -29,4 +30,17 @@
 <?php wp_footer(); ?>
 
 </body>
+<!-- Animated Hover -->
+    <script>
+        $(function() {
+            $("#imgDino").hover(
+                function() {
+                    $(this).attr("src", "/wp-content/uploads/2016/09/EQBA_animated_white.gif");
+                },
+                function() {
+                    $(this).attr("src", "/wp-content/uploads/2016/09/eqba-logo-black-1.png");
+                }                         
+            );                  
+        });
+    </script>
 </html>
