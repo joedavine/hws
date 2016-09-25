@@ -939,7 +939,6 @@ object {
 --------------------------------------------------------------*/
 
 /* ### Header & Nav Styles ### */
-
 .site-header {
     z-index: 400;
 }
@@ -1029,7 +1028,7 @@ object {
 
 
 #rooms {
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     z-index: -1;
 }
@@ -1042,10 +1041,125 @@ object {
     padding: 30px 0 30px 0;
     letter-spacing: 5px;
     font-weight:normal;
+    margin-bottom: 0px;
 }
 
-/* ### General Use Styles ### */
 
+.rooms-half {
+    float: left; 
+    width: 50%; 
+    background-color: blue; 
+    color: white; 
+    text-align: center; 
+    font-weight: 200; 
+    text-transform: uppercase; 
+    height: 300px; 
+    text-align: center;
+    border: 3px solid #f2f2f2;
+}
+
+.rooms-half-right {
+    float: left; 
+    width: 50%; 
+    background-color: blue; 
+    color: white; 
+    text-align: center; 
+    font-weight: 200; 
+    text-transform: uppercase; 
+    height: 300px; 
+    text-align: center;
+    border: 3px solid #f2f2f2;
+    border-left: 0;
+}
+
+
+.rooms-full {
+    float: left; 
+    width: 100%; 
+    background-color: red; 
+    color: white; 
+    text-align: center; 
+    font-weight: 200; 
+    text-transform: uppercase; 
+    height: 300px; 
+    text-align: center;
+    border: 3px solid #f2f2f2;
+    border-top:0px
+}
+
+#latest-stuff {
+    background-color: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+#latest-stuff h2{
+    color: #0e0e0e;
+    
+    text-transform: uppercase;
+    margin-top: 0;
+    padding: 30px 0 30px 0;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.latest-stuff-header {
+    text-align: center; 
+    margin: 0px 0px 0px 0px;
+}
+
+.social-container {
+    text-align:left;
+}
+
+.social-image {
+    margin: 0 15px 0 15px;
+}
+
+
+.social-image-first {
+    margin: 0 15px 0 0;
+}
+
+.social-image-last {
+    margin: 0 0 0 15px;
+}
+
+.social-card h4 {
+    margin: 0 0 0 0;
+    text-align: left;
+}
+
+.social-card {
+    transition: 0.3s;
+    background-color: white;
+    margin: 20px auto 20px auto;
+}
+
+.social-card:hover {
+    background-color: #d6171c;
+    color:white;
+    cursor: pointer;
+}
+
+.social-posts-container {
+    display: inline;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    
+}
+
+.social p {
+    text-align: left;
+}
+
+.social {
+    margin: 0 10px 0 10px;
+}
+
+
+/* ### General Use Styles ### */
 .CTA {
     background-color: #d6171c;
     color: white;
@@ -1058,6 +1172,13 @@ object {
 .CTA:hover {
     color: white !important;
     text-decoration: underline;
+}
+
+.hollow-CTA {
+    border: 2px solid #d6171c; 
+    color: #d6171c; 
+    text-decoration: none; 
+    padding: 15px 40px 15px 40px;
 }
 
 .card {
@@ -1087,7 +1208,6 @@ object {
 
 .card-container {
     padding: 2px 16px;
-    text-align: center;
     background-color: #fff;
 }
 
@@ -1108,6 +1228,44 @@ object {
 }
 body {
     background-color: #fff;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.fifty-inline {
+    display: inline-block; 
+    width: 50%;
+}
+
+.twentyfive-inline {
+    display: inline-block;
+    width: 25%;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float:left;
+}
+
+.top-margin {
+    margin-top: 30px;
+}
+    
+.center-text {
+    text-align: center;
+}
+
+.margin-eighty {
+    margin: 0 100px 0 100px;
 }
 
 /* ### Footer Styles ### */
