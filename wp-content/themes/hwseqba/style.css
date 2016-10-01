@@ -1056,12 +1056,13 @@ object {
     height: 300px; 
     text-align: center;
     border: 3px solid #f2f2f2;
+    background-size: cover;
 }
 
 .rooms-half-right {
     float: left; 
     width: 50%; 
-    background-color: blue; 
+    background-color: black; 
     color: white; 
     text-align: center; 
     font-weight: 200; 
@@ -1070,13 +1071,14 @@ object {
     text-align: center;
     border: 3px solid #f2f2f2;
     border-left: 0;
+    background-size: cover;
 }
 
 
 .rooms-full {
     float: left; 
     width: 100%; 
-    background-color: red; 
+    background-color: black; 
     color: white; 
     text-align: center; 
     font-weight: 200; 
@@ -1084,7 +1086,8 @@ object {
     height: 300px; 
     text-align: center;
     border: 3px solid #f2f2f2;
-    border-top:0px
+    border-top:0px;
+    background-size: cover;
 }
 
 #latest-stuff {
