@@ -45,8 +45,11 @@ function hws_eqba_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'hws-eqba' ),
+        'rooms-menu' => __( 'Rooms Menu' )
 	) );
 
+    
+    
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
