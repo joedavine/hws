@@ -531,6 +531,8 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+
+/* ### Main Navigation ### */
 .main-navigation {
 	/*clear: both;*/
 	display: block;
@@ -681,6 +683,42 @@ a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/* ### Rooms Menu ### */
+.rooms-menu{
+    margin: -8px 0 0 62px;
+    z-index: 500;
+}
+
+.rooms-menu li.current-menu-item a{
+    color: white;
+}
+
+.rooms-menu a{
+    color: #a5a5a5;
+    text-decoration: none;
+    text-align: left;
+    z-index: 500;
+}
+
+.rooms-menu li{
+    list-style-type: none;
+    display: inline;
+    text-align: left;
+    margin-right: 10px;
+    float: left;
+    z-index: 500;
+}
+
+.rooms-menu li:after {
+    color: #a5a5a5;
+    margin-left: 10px;
+	content: "|";
+}
+
+.rooms-menu li:last-child:after {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -956,6 +994,10 @@ object {
     background-repeat: no-repeat !important;
 }
 
+#masthead {
+    height: 60px;
+}
+
 .header-content-bg {
     background-color: #000;
     height: 60vh;
@@ -1199,6 +1241,7 @@ object {
     margin: 0;
     height: 300px;
     cursor: pointer;
+    border: 3px solid #f2f2f2;
 }
 
 .room-panel h2 {

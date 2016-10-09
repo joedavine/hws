@@ -30,28 +30,28 @@ get_header(); ?>
             <div id="home-header" style="background: url('<?php the_field('rooms_banner'); ?>') fixed;">
                 <div class="header-content-bg">
                 </div>
-                <div class="header-content">
+                <div class="header-content" style="border-bottom: white 3px solid;">
                     <h1><span>Rooms</span></h1> 
                     <p class="wide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
                 </div>
             </div>
         </div>
 <!-- Room Panels -->
-            <div class="overlay room-panel" style="background: url('<?php the_field('rooms_banner'); ?>');">
+            <div class="overlay room-panel" style="background: url('<?php the_field('slate_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
                 <div class="panel-content">
                     <h2>Slate Room</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
                     <a class="ghostCTA" href="../slate">Find out more</a>
                 </div>
             </div>
-            <div class="overlay room-panel" style="background: url('<?php the_field('rooms_banner'); ?>');">
+            <div class="overlay room-panel" style="background: url('<?php the_field('cork_image'); ?>'); border-top:0px; border-top:0px; background-position: center; background-size: cover;">
                 <div class="panel-content">
                     <h2>Cork Room</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
                     <a class="ghostCTA" href="/slate">Find out more</a>
                 </div>
             </div>
-            <div class="overlay room-panel" style="background: url('<?php the_field('rooms_banner'); ?>');">
+            <div class="overlay room-panel" style="background: url('<?php the_field('control_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
                 <div class="panel-content">
                     <h2>Control Room</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
