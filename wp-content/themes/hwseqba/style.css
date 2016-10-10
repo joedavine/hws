@@ -1232,15 +1232,13 @@ object {
     margin-top: 10%;
 }
 
-.room-panel {
+.outer {
     text-align: left;
-    background-color: black;
     color: white;
     width: 100%;
     padding: 0;
     margin: 0;
     height: 300px;
-    cursor: pointer;
     border: 3px solid #f2f2f2;
 }
 
@@ -1254,16 +1252,54 @@ object {
     padding-bottom: 20px;
 }
 
-.panel-content {
+.inner-content p {
+    padding-bottom: 30px;
+}
+
+.inner {
+    background: rgba(0,0,0,0.0);
+    transition: 1.5s ease;
+}
+
+.inner .inner-content {
+    opacity: 0;
+    transition: 1.5s ease;
     width: 50%;
     font-size: 11pt;
     font-weight: 200;
     padding: 50px 0 50px 120px;
-    z-index: 300;
+    color: white;
 }
 
-.panel-content p {
-    padding-bottom: 30px;
+.inner-content h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+
+.inner .inner-content a, .inner .inner-content a:visited {
+    color: white;
+}
+
+.inner .inner-content a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inner:hover {
+    background: rgba(0,0,0,0.5);
+    
+}
+
+.inner:hover .inner-content {
+    opacity: 1;
+}
+
+.room-panel:hover .trans-content {
+    opacity: 1;
 }
 
 /* ### General Use Styles ### */
@@ -1287,6 +1323,28 @@ object {
 }
 .overlay:hover:after {
     opacity: 0;
+}
+
+.reverse-overlay {
+    position: relative;
+    transition: all 1.5s;
+}
+
+.reverse-overlay:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+   -moz-transition: all 1.5s;
+}
+.reverse-overlay:hover:after {
+    opacity: 0.85;
 }
 
 .ghostCTA {

@@ -37,25 +37,31 @@ get_header(); ?>
             </div>
         </div>
 <!-- Room Panels -->
-            <div class="overlay room-panel" style="background: url('<?php the_field('slate_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
-                <div class="panel-content">
-                    <h2>Slate Room</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
-                    <a class="ghostCTA" href="../slate">Find out more</a>
+            <div class="outer" style="height: 300px; background: url('<?php the_field('slate_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
+                <div class="inner" style="height: 300px;">
+                    <div class="inner-content">
+                        <h2>Slate Room</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+                        <a class="ghostCTA" href="../rooms/slate">Find out more</a>
+                    </div>    
                 </div>
             </div>
-            <div class="overlay room-panel" style="background: url('<?php the_field('cork_image'); ?>'); border-top:0px; border-top:0px; background-position: center; background-size: cover;">
-                <div class="panel-content">
-                    <h2>Cork Room</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
-                    <a class="ghostCTA" href="/slate">Find out more</a>
+            <div class="outer" style="height: 300px; background: url('<?php the_field('cork_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
+                <div class="inner" style="height: 300px;">
+                    <div class="inner-content">
+                        <h2>Cork Room</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+                        <a class="ghostCTA" href="../rooms/slate">Find out more</a>
+                    </div>    
                 </div>
             </div>
-            <div class="overlay room-panel" style="background: url('<?php the_field('control_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
-                <div class="panel-content">
-                    <h2>Control Room</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
-                    <a class="ghostCTA" href="/slate">Find out more</a>
+            <div class="outer" style="height: 300px; background: url('<?php the_field('control_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
+                <div class="inner" style="height: 300px;">
+                    <div class="inner-content">
+                        <h2>Control Room</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+                        <a class="ghostCTA" href="../rooms/slate">Find out more</a>
+                    </div>    
                 </div>
             </div>
 

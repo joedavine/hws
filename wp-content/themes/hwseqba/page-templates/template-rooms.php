@@ -24,25 +24,30 @@ get_header(); ?>
 		endwhile; // End of the loop.
 		?>
 <!-- Header -->
-        <div id="rooms-header">
-            <div id="home-header" style="background: url('<?php 
-$post_id = false; // current post
-the_field('single_room_banner', $post_id); ?>') fixed;">
-                <div class="header-content-bg">
-                </div>
-                <div class="header-content">
-                    <?php wp_nav_menu( array( 'theme_location' => 'rooms-menu', 'container_class' => 'rooms-menu' ) ); ?>
-                    <h1><span><?php the_title(); ?> Room</span></h1> 
-                    <p class="wide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+            <div id="rooms-header">
+                <div id="home-header" style="background: url('<?php 
+    $post_id = false; // current post
+    the_field('single_room_banner', $post_id); ?>') fixed;">
+                    <div class="header-content-bg">
+                    </div>
+                    <div class="header-content">
+                        <?php wp_nav_menu( array( 'theme_location' => 'rooms-menu', 'container_class' => 'rooms-menu' ) ); ?>
+                        <h1><span><?php the_title(); ?> Room</span></h1> 
+                        <p class="wide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <?php 
-    echo do_shortcode("[metaslider id=83]"); 
-?>
-        </div>
-        <?php get_template_part( 'social' );           // Social Section (social.php) ?> 
+            <div class="gallery">
+
+            </div>
+            <?php get_template_part( 'social' );           // Social Section (social.php) ?> 
+            <script>
+                $(document).ready(function(){
+                    $('.gallery').slick({
+                        setting-name: setting-value
+                    });
+                });
+            </script>    
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
