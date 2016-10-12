@@ -542,6 +542,11 @@ a:active {
 }
 
 
+
+#primary-menu li.current-menu-item a{
+    color: #d6171c;
+}
+
 .nav-logo {
     float: left;
 }
@@ -1300,6 +1305,41 @@ object {
 
 .room-panel:hover .trans-content {
     opacity: 1;
+}
+
+
+/* ### Clients Styles ### */
+
+.client-list {
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+
+.client-list h3 {
+    font-size: 14pt;
+}
+
+.client-list h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.client-list h3 a:hover {
+    color: #d6171c;
+}
+
+.right-content {
+    display: inline-block;
+}
+
+.band-banner {
+    width: 100%;
+}
+
+.band-banner img {
+    width: 100%;
+    display:block;
 }
 
 /* ### General Use Styles ### */

@@ -31,7 +31,7 @@ get_header(); ?>
                 <div class="header-content-bg">
                 </div>
                 <div class="header-content" style="border-bottom: white 3px solid;">
-                    <h1><span>Rooms</span></h1> 
+                    <h1><span><?php the_title(); ?></span></h1> 
                     <p class="wide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
                 </div>
             </div>
