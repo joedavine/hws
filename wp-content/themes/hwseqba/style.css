@@ -510,7 +510,7 @@ a {
 }
 
 a:visited {
-	color: purple;
+	color: white;
 }
 
 a:hover,
@@ -992,6 +992,8 @@ object {
     position: relative;
     width: 100%;
     height: 60vh;
+    max-height: 900px;
+    min-height: 400px;	
     background-color: black; 
     margin-top: 60px; 
     padding: 0;
@@ -1036,7 +1038,7 @@ object {
 }
 
 .header-content p {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     color: white;
     max-width: 350px;
     margin: 0 auto 0 auto;
@@ -1311,13 +1313,20 @@ object {
 /* ### Clients Styles ### */
 
 .client-list {
-    width: 300px;
-    text-align: center;
+    width: 25%;
+    text-align: left;
     display: inline-block;
+    float:left;
+}
+
+.client-list .current-menu-item {
+    color:blue;
 }
 
 .client-list h3 {
-    font-size: 14pt;
+    font-size: 12pt;
+    font-weight: normal;
+    padding-left: 100px;
 }
 
 .client-list h3 a {
@@ -1331,16 +1340,83 @@ object {
 
 .right-content {
     display: inline-block;
+    width:75%;
 }
 
 .band-banner {
     width: 100%;
+    overflow: hidden;
+    max-height: 350px;
 }
 
 .band-banner img {
     width: 100%;
     display:block;
 }
+
+.band-content {
+    background-color: #f2f2f2;
+    width: 100%;
+    float: left;
+}
+
+.band-content p {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.band-content {
+    padding-bottom: 60px;
+}
+
+.client-content {
+    max-width: 60%;
+    margin-left: 12%;
+}
+
+.client-content a {
+    color: #d6171c;
+}
+
+.client-content p {
+    margin-top: 40px;
+    font-weight: 100;
+}
+
+.band-badge {
+    background-color: #d6171c;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    border: 3px solid #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    top: -15px;
+    z-index: 99;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* ### Contact Page Styles ### */
+
+#contact .contact-left h2{
+    color: #ffffff;
+    font-size: 32pt;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#contact {
+    width: 100%; 
+    height: 100%;
+}
+
+#map {
+        height: 405px;
+        width: 100%;
+       }
 
 /* ### General Use Styles ### */
 .overlay {

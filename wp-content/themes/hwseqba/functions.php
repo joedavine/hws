@@ -90,10 +90,11 @@ function create_post_type() {
     array(
       'labels' => array(
         'name' => __( 'Clients' ),
-        'singular_name' => __( 'Clients' )
+        'singular_name' => __( 'Client' )
       ),
       'public' => true,
       'has_archive' => true,
+      
     )
   );
 }
@@ -158,4 +159,10 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+ * Loads the ACF options page.
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();	
+}
 

@@ -33,7 +33,10 @@ get_header(); ?>
                     <div class="header-content">
                         <?php wp_nav_menu( array( 'theme_location' => 'rooms-menu', 'container_class' => 'rooms-menu' ) ); ?>
                         <h1><span><?php the_title(); ?> Room</span></h1> 
-                        <p class="wide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+                        <p class="wide-paragraph">
+<?php 
+    $post_id = false; // current post
+    the_field('single_room_header_text', $post_id); ?></p>
                     </div>
                 </div>
             </div>

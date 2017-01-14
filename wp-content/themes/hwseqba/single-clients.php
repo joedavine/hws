@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">		
+		<main id="main" class="site-main" role="main" style="margin-bottom: -6px;">		
 <!-- Header -->
         <div id="rooms-header">
             <div id="home-header" style="background: url('/wp-content/uploads/2016/10/band-bg.jpg') fixed;">
@@ -26,32 +26,31 @@ get_header(); ?>
             
 <!-- Start the Loop. -->
             <div class="client-list">
- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
- 	<!-- Test if the current post is in category 3. -->
- 	<!-- If it is, the div box is given the CSS class "post-cat-three". -->
- 	<!-- Otherwise, the div box is given the CSS class "post". -->
-
- 	<?php if ( in_category( 'clients' ) ) : ?>
-                <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
- 	<?php endif; ?>
- 	<!-- Stop The Loop (but note the "else:" - see next line). -->
- <?php endwhile; else : ?>
- 	<!-- The very first "if" tested to see if there were any Posts to -->
- 	<!-- display.  This "else" part tells what do if there weren't any. -->
- 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
- 	<!-- REALLY stop The Loop. -->
- <?php endif; ?>
+                <?php query_posts('post_type=clients');
+                if(have_posts()) : while(have_posts()) : the_post(); ?>
+                    
+                    <h3>
+                        <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                    </h3>
+                <?php endwhile; endif; ?>                
             </div>
+                
+                <?php wp_reset_query(); ?>
+                <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
                 <div class="right-content">
-                    <div class="band-banner" style="width: 100%;">
+                    <div class="band-banner" style="width: 100%; float: right;">
                         <img src="<?php the_field('client_image'); ?>">
                     </div>
                     <div class="band-content">
-                        CONTENT
+                        <div class="client-content">
+                            <span class="band-badge"><?php the_title(); ?></span>
+                            <?php the_content(); ?>
+                            <a href="<?php the_field('client_link'); ?>"><?php the_field('client_link'); ?></a>
+                        </div>
+                        <?php echo $postID; ?>
                     </div>
                 </div>
-                
+            <?php endwhile; endif; ?>   
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

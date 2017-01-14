@@ -1,3 +1,9 @@
+# Switch rewrite engine off in case this was installed under HostPay.
+RewriteEngine Off
+
+SetEnv DEFAULT_PHP_VERSION 56
+
+DirectoryIndex index.cgi index.php
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>

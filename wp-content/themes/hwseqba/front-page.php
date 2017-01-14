@@ -49,7 +49,7 @@ get_header(); ?>
                 <div class="header-content" style="padding-top: 80px; text-align:center;">
                     <h1><?php the_field('banner_heading'); ?><br><span><?php the_field('banner_strong'); ?></span></h1>
                     <p><?php the_field('header_description'); ?></p>
-                    <a href="#" class="CTA">Get in touch</a>
+                    <a href="/contact" class="CTA">Get in touch</a>
                 </div>
             </div>
 <!-- Services Section -->            
@@ -57,21 +57,21 @@ get_header(); ?>
             <h2>Services</h2>
             <div class="cards">
                 <div class="card first-card">
-                    <img src="/wp-content/uploads/2016/09/img_avatar.png" alt="Avatar" style="width:100%">
+                    <img src="<?php the_field('recording_image'); ?>" alt="Avatar" style="width:100%">
                     <div class="card-container center-text">
                         <h4 class="CTA"><b>Recording</b></h4> 
                         <p><?php the_field('recording_text'); ?></p> 
                     </div>
                 </div>
                 <div class="card middle-card">
-                    <img src="/wp-content/uploads/2016/09/img_avatar.png" alt="Avatar" style="width:100%">
+                    <img src="<?php the_field('rehearsal_image'); ?>" alt="Avatar" style="width:100%">
                     <div class="card-container">
                         <h4 class="CTA"><b>Rehearsal</b></h4> 
                         <p><?php the_field('rehearsal_text'); ?></p> 
                     </div>
                 </div>
                 <div class="card last-card">
-                    <img src="/wp-content/uploads/2016/09/img_avatar.png" alt="Avatar" style="width:100%">
+                    <img src="<?php the_field('residency_image'); ?>" alt="Avatar" style="width:100%">
                     <div class="card-container">
                         <h4 class="CTA"><b>Residency</b></h4> 
                         <p><?php the_field('residency_text'); ?></p> 
@@ -80,20 +80,10 @@ get_header(); ?>
             </div>
         </div>
 <!-- Rooms Section -->              
-        <div id="rooms">
-            <h2>rooms</h2>
-            <div class="rooms-container">
-                <div class="rooms-half" style="background-image: url('<?php the_field('slate_room_image'); ?>');">
-                    <h3 class="vertical-align">Slate Room</h3>
-                </div>
-                <div class="rooms-half-right" style="background-image: url('<?php the_field('cork_room_image'); ?>');">
-                    <h3 class="vertical-align">Cork Room</h3>
-                </div>
-                <div class="rooms-full" style="background-image: url('<?php the_field('control_room_image'); ?>');">
-                    <h3 class="vertical-align">Control Room</h3>
-                </div>
-            </div>
-        </div> 
+        <div>
+            <h2>About the Studio</h2>
+	</div>
+               
 <!-- Latest Stuff Section -->
         <?php get_template_part( 'social' );           // Social Section (social.php) ?> 
 		</main><!-- #main -->

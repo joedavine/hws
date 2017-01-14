@@ -46,13 +46,13 @@
 		
         
         </div><!-- .site-branding -->
-        <div style="background-color: white; height:60px">
+        <div style="background-color: white; height:60px; box-shadow: 0 0px 6px 0 rgba(0,0,0,0.2);">
             <nav id="site-navigation" class="main-navigation" role="navigation">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hws-eqba' ); ?></button>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
             </nav><!-- #site-navigation -->
                     <div class="git-button">
-                <a href="#">Get in touch.</a>
+                <a href="/contact">Get in touch.</a>
             </div>
         </div>
 	</header><!-- #masthead -->
