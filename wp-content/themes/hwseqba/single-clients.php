@@ -13,12 +13,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main" style="margin-bottom: -6px;">		
 <!-- Header -->
         <div id="rooms-header">
-            <div id="home-header" style="background: url('/wp-content/uploads/2016/10/band-bg.jpg') fixed;">
+            <div id="home-header" style="background: url('<?php the_field('clients_background', 'option'); ?>') fixed;">
                 <div class="header-content-bg">
                 </div>
                 <div class="header-content" style="border-bottom: white 3px solid;">
                     <h1><span>Clients</span></h1> 
-                    <p class="wide-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in finibus nunc.</p>
+                    <p class="wide-paragraph"><?php the_field('clients_text', 'option'); ?></p>
                 </div>
             </div>
         </div>

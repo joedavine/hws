@@ -18,7 +18,7 @@ get_header(); ?>
                 <div class="contact-left-container" style="width: 50%; float:left; background-color: #d6171c; height:100%; color: white;">
                     <div class="contact-left" style="margin: 100px 60px 100px 60px;">
                         <h2>Contact</h2>
-                        <p style="font-weight: 200;">Lorem Ipsum Bacon incarnate.</p>
+                        <p style="font-weight: 200;"><?php the_field('contact_text', 'option'); ?></p>
                         <ul class="contact-details" style="padding: 0; list-style-type: none; font-weight:200;">
                             <li style="list-style-type: none;"><img src="#"> Contact details here</li>
                             <li style="list-style-type: none;"><img src="#"> Contact details here</li>

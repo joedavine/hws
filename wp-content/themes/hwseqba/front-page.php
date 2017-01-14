@@ -79,10 +79,15 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-<!-- Rooms Section -->              
-        <div>
-            <h2>About the Studio</h2>
-	</div>
+<!-- About Section -->              
+        <div id="about-us">
+            <h2>About The Studio</h2>
+            <div class="about-container">
+                <p>Born out of the frustration with the music 'ego-culture', Hermitage Works Studios was set up to focus on crafting great music. With a strong community vibe, HWS is constantly buzzing with musicians, hungry to find the best sounds possible. This is reflected in every track produced within our walls - and we're very proud of that. </p>
+                <a href="#" class="CTA" style="background-color: transparent;">See Our Engineers</a>
+            </div>
+            
+        </div>
                
 <!-- Latest Stuff Section -->
         <?php get_template_part( 'social' );           // Social Section (social.php) ?> 

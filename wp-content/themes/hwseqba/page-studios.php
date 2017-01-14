@@ -51,7 +51,7 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Cork Room</h2>
                         <p><?php the_field('cork_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/slate">Find out more</a>
+                        <a class="ghostCTA" href="../studios/cork">Find out more</a>
                     </div>    
                 </div>
             </div>
@@ -60,29 +60,28 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Control Room</h2>
                         <p><?php the_field('control_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/slate">Find out more</a>
+                        <a class="ghostCTA" href="../studios/control">Find out more</a>
                     </div>    
                 </div>
             </div>
-            <div class="outer" style="height: 300px; background: url('<?php the_field('control_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
+            <div class="outer" style="height: 300px; background: url('<?php the_field('mix_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
                 <div class="inner" style="height: 300px;">
                     <div class="inner-content">
                         <h2>Mix Room</h2>
-                        <p><?php the_field('control_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/slate">Find out more</a>
+                        <p><?php the_field('mix_text'); ?></p>
+                        <a class="ghostCTA" href="../studios/mix">Find out more</a>
                     </div>    
                 </div>
             </div>
-            <div class="outer" style="height: 300px; background: url('<?php the_field('control_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
+            <div class="outer" style="height: 300px; background: url('<?php the_field('breakout_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
                 <div class="inner" style="height: 300px;">
                     <div class="inner-content">
                         <h2>Breakout Room</h2>
-                        <p><?php the_field('control_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/slate">Find out more</a>
+                        <p><?php the_field('breakout_text'); ?></p>
+                        <!--<a class="ghostCTA" href="../studios/breakout>Find out more</a>-->
                     </div>    
                 </div>
-            </div>
-
+            </div
 
             
             
