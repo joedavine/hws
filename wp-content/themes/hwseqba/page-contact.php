@@ -15,15 +15,20 @@ get_header(); ?>
 <!-- Container -->
             <div id="contact">
 <!-- First Half -->                
-                <div class="contact-left-container" style="width: 50%; float:left; background-color: #d6171c; height:100%; color: white;">
-                    <div class="contact-left" style="margin: 100px 60px 100px 60px;">
+                <div class="contact-left-container">
+                    <div class="contact-left">
                         <h2>Contact</h2>
                         <p style="font-weight: 200;"><?php the_field('contact_text', 'option'); ?></p>
                         <ul class="contact-details" style="padding: 0; list-style-type: none; font-weight:200;">
-                            <li style="list-style-type: none;"><img src="#"> Contact details here</li>
-                            <li style="list-style-type: none;"><img src="#"> Contact details here</li>
-                            <li style="list-style-type: none;"><img src="#"> Contact details here</li>
+                            <li style="list-style-type: none;"><img src="/wp-content/uploads/2017/01/email-1.png"><a href="<?php the_field('contact_email', 'option') ?>"><?php the_field('contact_email', 'option') ?></a></li>
+                            <li style="list-style-type: none;"><img src="/wp-content/uploads/2017/01/phone-1.png"> <?php the_field('contact_telephone', 'option') ?></li>
+                            <li style="list-style-type: none;"><img style="float: left;"src="/wp-content/uploads/2017/01/location.png"> 
+                                <div style="float: left">
+                                    <?php the_field('contact_address', 'option') ?>
+                                </div>
+                            </li>
                         </ul>
+                        <?php get_template_part( 'small-social-white' );           // Social Section (social.php) ?> 
                     </div>
                 </div>
 <!--Second Half -->                

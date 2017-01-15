@@ -83,7 +83,7 @@ function hws_eqba_content_width() {
 }
 add_action( 'after_setup_theme', 'hws_eqba_content_width', 0 );
 
-
+/** Added in Custom Post: Clients **/
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
   register_post_type( 'clients',
@@ -91,6 +91,17 @@ function create_post_type() {
       'labels' => array(
         'name' => __( 'Clients' ),
         'singular_name' => __( 'Client' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      
+    )
+  );
+    register_post_type( 'engineers',
+    array(
+      'labels' => array(
+        'name' => __( 'Engineers' ),
+        'singular_name' => __( 'Engineer' )
       ),
       'public' => true,
       'has_archive' => true,

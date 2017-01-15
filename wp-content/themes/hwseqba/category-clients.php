@@ -17,7 +17,7 @@ get_header(); ?>
                 <div class="header-content-bg">
                 </div>
                 <div class="header-content" style="border-bottom: white 3px solid;">
-                    <h1><span>Clients</span></h1> 
+                    <h1><span>Clients testical</span></h1> 
                     <p class="wide-paragraph"><?php the_field('clients_text', 'option'); ?></p>
                 </div>
             </div>
