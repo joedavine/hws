@@ -83,8 +83,8 @@ get_header(); ?>
         <div id="about-us">
             <h2>About The Studio</h2>
             <div class="about-container">
-                <p>Born out of the frustration with the music 'ego-culture', Hermitage Works Studios was set up to focus on crafting great music. With a strong community vibe, HWS is constantly buzzing with musicians, hungry to find the best sounds possible. This is reflected in every track produced within our walls - and we're very proud of that. </p>
-                <a href="#" class="CTA" style="background-color: transparent;">See Our Engineers</a>
+                <p><?php the_field('about_text'); ?></p>
+                <a href="/engineers" class="CTA" style="background-color: transparent;">See Our Engineers</a>
             </div>
             
         </div>
