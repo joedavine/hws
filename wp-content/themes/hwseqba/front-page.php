@@ -90,7 +90,7 @@ get_header(); ?>
         </div>
                
 <!-- Latest Stuff Section -->
-        <?php get_template_part( 'socials' );           // Social Section (social.php) ?>
+        <?php get_template_part( 'social' );           // Social Section (social.php) ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -1219,6 +1219,9 @@ object {
     transition: 0.3s;
     background-color: white;
     margin: 20px auto 20px auto;
+    vertical-align:top; 
+    margin: auto 10px; 
+    height:430px;
 }
 
 .social-card:hover {
@@ -1228,11 +1231,10 @@ object {
 }
 
 .social-posts-container {
-    display: inline;
     width: 100%;
+    display:inline-block;
     margin: 0 auto 0 auto;
     text-align: center;
-    
 }
 
 .social p {
@@ -1241,6 +1243,7 @@ object {
 
 .social {
     margin: 0 10px 0 10px;
+    font-size: 8pt;
 }
 
 /* ### Rooms Page Styles ### */
