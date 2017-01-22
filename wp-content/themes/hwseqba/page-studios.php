@@ -31,7 +31,7 @@ get_header(); ?>
                 <div class="header-content-bg">
                 </div>
                 <div class="header-content" style="border-bottom: white 3px solid;">
-                    <h1><span><?php the_title(); ?></span></h1> 
+                    <h1><span><?php the_title(); ?></span></h1>
                     <p class="wide-paragraph"><?php the_field('rooms_text'); ?></p>
                 </div>
             </div>
@@ -42,8 +42,7 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Slate Room</h2>
                         <p><?php the_field('slate_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/slate">Find out more</a>
-                    </div>    
+                    </div>
                 </div>
             </div>
             <div class="outer" style="height: 300px; background: url('<?php the_field('cork_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
@@ -51,8 +50,7 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Cork Room</h2>
                         <p><?php the_field('cork_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/cork">Find out more</a>
-                    </div>    
+                    </div>
                 </div>
             </div>
             <div class="outer" style="height: 300px; background: url('<?php the_field('control_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
@@ -60,8 +58,7 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Control Room</h2>
                         <p><?php the_field('control_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/control">Find out more</a>
-                    </div>    
+                    </div>
                 </div>
             </div>
             <div class="outer" style="height: 300px; background: url('<?php the_field('mix_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
@@ -69,8 +66,7 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Mix Room</h2>
                         <p><?php the_field('mix_text'); ?></p>
-                        <a class="ghostCTA" href="../studios/mix">Find out more</a>
-                    </div>    
+                    </div>
                 </div>
             </div>
             <div class="outer" style="height: 300px; background: url('<?php the_field('breakout_image'); ?>'); border-top:0px; background-position: center; background-size: cover;">
@@ -78,14 +74,13 @@ get_header(); ?>
                     <div class="inner-content">
                         <h2>Breakout Room</h2>
                         <p><?php the_field('breakout_text'); ?></p>
-                        <!--<a class="ghostCTA" href="../studios/breakout>Find out more</a>-->
-                    </div>    
+                    </div>
                 </div>
             </div
 
-            
-            
-            
+
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

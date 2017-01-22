@@ -15,12 +15,12 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info" style="width: 100%;">
-			<span class="footer-text">&#169; 2016 - Hermitage Works Studios</span>
-            
+			<span class="footer-text">&#169; <?php echo date("Y"); ?> - Hermitage Works Studios</span>
+
             <div class="footer-container">
                 <img class="footer-image" src="/wp-content/uploads/2016/09/hws-small.png">
             </div>
-            
+
             <a href="http://eqba.uk">
                 <img class="footer-logo" id="imgDino" src="/wp-content/uploads/2016/09/eqba-logo-black-1.png"></a>
 		</div><!-- .site-info -->
@@ -39,8 +39,8 @@
                 },
                 function() {
                     $(this).attr("src", "/wp-content/uploads/2016/09/eqba-logo-black-1.png");
-                }                         
-            );                  
+                }
+            );
         });
     </script>
 </html>
