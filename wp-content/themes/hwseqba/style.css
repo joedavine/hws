@@ -1779,13 +1779,28 @@ body {
 .engineer-single {
     margin: 30px 30px 30px 30px;
     display: grid;
+		vertical-align: top;
+		height: 500px;
+}
+
+.engineer-single p {
+    padding: 10px 0px 20px;
 }
 
 .engineer-single a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
 .engineer-single a:hover {
     text-decoration: underline;
+}
+
+.engineers-container .column-left {
+	float:left;
+	display: inline-block;
+}
+.engineers-container .column-right {
+	float:right;
+	display: inline-block;
 }

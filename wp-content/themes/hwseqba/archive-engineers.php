@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main" style="margin-bottom: -6px;">		
+		<main id="main" class="site-main" role="main" style="margin-bottom: -6px;">
 <!-- Header -->
         <div id="rooms-header">
             <div id="home-header" style="background: url('<?php the_field('engineers_background', 'option'); ?>') fixed; background-size: cover; background-position: center;">
@@ -23,7 +23,7 @@ get_header(); ?>
             </div>
         </div>
 
-            
+
 <!-- Start the Loop. -->
         <div id="engineers">
             <div class="engineers-container">
@@ -36,11 +36,12 @@ get_header(); ?>
                 <h2 class="cta">
                             <!--<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">--><?php the_title(); ?><!--</a>-->
                         </h2>
-                    <p><?php the_content(); ?></p>
+                    <p><?php the_field('brief_bio'); ?></p>
+										<a href="<?php the_permalink();?>" class="CTA">Read more</a>
             </div>
-                <?php endwhile; endif; ?>           
+                <?php endwhile; endif; ?>
         </div>
-         </div>                
+         </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
