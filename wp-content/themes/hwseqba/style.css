@@ -1618,11 +1618,31 @@ nav .CTA {
     max-height: 600px;
 }
 
+.contact-right-container {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+
 #map {
     height: 100%;
     width: 100%;
     min-height: 600px;
-       }
+  }
+
+	@media (max-width: 992px) {
+		.contact-left-container {
+			width: 100%;
+		}
+
+		.contact-left {
+		  margin: 90px 60px 60px;
+		}
+
+		.contact-right-container {
+			display:none;
+		}
+	}
 
 /* ### General Use Styles ### */
 .overlay {
@@ -1841,6 +1861,12 @@ body {
 .social-container-white li {
     float: left;
     margin-right: 50px;
+}
+
+@media (max-width: 992px) {
+	.social-container-white li {
+		margin-right: 15px;
+	}
 }
 
 /* ### Engineers Archive Page ### */
