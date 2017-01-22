@@ -32,7 +32,7 @@ get_header(); ?>
                     </div>
                 </div>
 <!--Second Half -->
-                <div class="contact-right-container" style="width: 50%; float: left; height: 100%;">
+                <div class="contact-right-container">
                 <div id="map"></div>
                 <script>
 
