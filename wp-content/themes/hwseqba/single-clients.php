@@ -25,6 +25,7 @@ get_header(); ?>
 
             
 <!-- Start the Loop. -->
+        <div id="client-single">
             <div class="client-list">
                 <?php query_posts('post_type=clients');
                 if(have_posts()) : while(have_posts()) : the_post(); ?>
@@ -48,9 +49,12 @@ get_header(); ?>
                             <a href="<?php the_field('client_link'); ?>"><?php the_field('client_link'); ?></a>
                         </div>
                         <?php echo $postID; ?>
+                         <a class="clients-all" href="/clients">Return to all clients</a>
                     </div>
                 </div>
             <?php endwhile; endif; ?>   
+        </div>
+            
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

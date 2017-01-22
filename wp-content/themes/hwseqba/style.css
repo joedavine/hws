@@ -1451,6 +1451,7 @@ nav .CTA {
 	#rooms-header #home-header {
 		min-height: 150px;
 		margin: 0px;
+        max-height:200px;
 	}
 
 	.inner {
@@ -1557,6 +1558,41 @@ nav .CTA {
     z-index: 99;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+.clients-all {
+    display:none;
+}
+
+@media (max-width: 800px){
+    .right-content {
+        display:none;
+    }
+    .client-list {
+        width:100%;
+    }
+    #client-single .client-list {
+        display:none;
+    } 
+    #client-single  .right-content {
+        display:block;
+        width:100%;
+    }
+    #client-single .client-content {
+        max-width:100%;
+        margin: 0 5%;
+    }
+    .clients-all {
+        display:block;
+        margin: 30px auto;
+        width: 300px;
+        text-align:center;
+        z-index: 120;
+        clear:both;
+        color: #d6171c;
+        font-weight: 100;
+        
+    }
 }
 
 /* ### Contact Page Styles ### */
