@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-                                        
+
 <?php wp_head(); ?>
 </head>
 
@@ -43,18 +43,14 @@
 				<!--<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>-->
 			<?php
 			endif; ?>
-		
-        
-        </div><!-- .site-branding -->
-        <div style="background-color: white; height:60px; box-shadow: 0 0px 6px 0 rgba(0,0,0,0.2);">
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hws-eqba' ); ?></button>
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-            </nav><!-- #site-navigation -->
-                    <div class="git-button">
-                <a href="/contact">Get in touch.</a>
-            </div>
-        </div>
+    </div><!-- .site-branding -->
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+      <button class="menu-toggle CTA" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'hws-eqba' ); ?></button>
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+    </nav><!-- #site-navigation -->
+    <div class="git-button">
+        <a href="/contact">Get in touch.</a>
+    </div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
